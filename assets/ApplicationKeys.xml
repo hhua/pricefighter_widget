@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<application-keys xmlns="http://www.ebay.com/msif/config">
+	<application-key env="production">
+		<application-id>eBaydd2b4-e64f-44fb-a43c-d7ca1b94555</application-id>
+		<developer-id>2b4562da-960d-4cf1-b827-1b5bf670b8d9</developer-id>
+		<certificate>6fe32aae-3bb2-4cca-bc9c-f33f0c1d7fde</certificate>
+	</application-key>
+	<application-key env="sandbox">
+		<application-id>eBay7774c-fb8a-45c8-8eb4-a08a7e45481</application-id>
+		<developer-id>2b4562da-960d-4cf1-b827-1b5bf670b8d9</developer-id>
+		<certificate>76e10e87-fa09-477e-8bde-0a753c1abe7d</certificate>
+	</application-key>
+</application-keys>

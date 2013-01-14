@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<service-client-config xmlns="http://www.ebay.com/msif/clientconfig" service-name="MerchandisingService">
+        <default-request-data-binding>XML</default-request-data-binding>
+        <default-response-data-binding>XML</default-response-data-binding>
+		<request-pipeline>
+			<handler name="ConnectionMonitorHandler">
+				<class-name>org.ebay.msif.core.impl.handler.ConnectionMonitorHandler</class-name>
+			</handler>
+			<handler name="SecurityHandler">
+				<class-name>com.ebay.msdk.handler.eBayLoginHandler</class-name>
+			</handler>
+			<handler name="eBaySvcInvocationHandler">
+				<class-name>com.ebay.msdk.handler.eBaySvcInvocationHandler</class-name>
+			</handler>
+		</request-pipeline>
+		<response-pipeline>
+		</response-pipeline>
+		<error-resolver name="eBaySvcErrorResolver">
+	    		<class-name>com.ebay.msdk.error.eBaySvcErrorResolverImpl</class-name>
+		</error-resolver>	
+</service-client-config>
